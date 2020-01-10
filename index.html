@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!-- Status Bar 맨 위에 시간 배터리 알려주는 공간 -->
     <div class="status-bar">
         <div class="status-bar__column">
             <span class="status-bar__clock">13:54</span>
@@ -24,6 +25,8 @@
         </div>
     </div>
 
+    <!-- Header 어떤 화면인지에 대한 표시와 
+        그 화면에서 할 수 있는 기능 (ex. search, setting) -->
     <header class="header">
         <div class="header__header-column">
             <h1 class="header__title">Chats</h1>
@@ -41,10 +44,13 @@
         </div>
     </header>
 
+    <!-- Main (여기가 메인이다 라는 뜻) 채팅 리스트 -->
     <main class="chats">
         <ul class="chats__list">
             <li class="chats_chat chat">
                 <a href="chat.html">
+
+                    <!-- profile(img, user name), last message -->
                     <div class="chat__column">
                         <img class="chat__avatar g-avatar" src="images/avatar.jpg">
                         <div class="chat__content">
@@ -55,6 +61,8 @@
                         </div>
 
                     </div>
+
+                    <!-- time stamp -->
                     <div class="chat__column">
                         <span class="chat__timestamp">Yesterday</span>
                     </div>
@@ -63,6 +71,7 @@
         </ul>
     </main>
 
+    <!-- 가장 하단에 네비게이션 바 -->
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav__list-item">
