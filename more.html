@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!-- Status Bar 맨 위에 시간 배터리 알려주는 공간 -->
     <div class="status-bar">
         <div class="status-bar__column">
             <span class="status-bar__clock">13:54</span>
@@ -23,6 +24,9 @@
             <i class="fas fa-battery-full"></i>
         </div>
     </div>
+
+    <!-- Header 어떤 화면인지에 대한 표시와 
+        그 화면에서 할 수 있는 기능 (ex. search, setting) -->
     <header class="header">
         <div class="header__header-column">
             <h1 class="header__title">More</h1>
@@ -35,10 +39,105 @@
                 <i class="fas fa-qrcode"></i>
             </span>
             <span class="header__icon">
-                <i class="fas fa-cog"></i>
+                <a href="settings.html">
+                    <i class="fas fa-cog"></i>
+                </a>
             </span>
         </div>
     </header>
+
+    <!-- Main (여기가 메인이다 라는 뜻) 나의 프로필이 있고
+        기타(이모티콘, 테마 등) 요소가 있음 -->
+    <main class="more">
+
+        <!-- User Profile & Emoticons, Themes, Account -->
+        <header class="more__header">
+            <div class="friends__friend friend">
+
+                <!-- User(My) Profile -->
+                <div class="friend__column">
+                    <img src="images/avatar.jpg" class="g-avatar friend__avatar">
+                    <div class="friend__content">
+                        <span class="friend__name">
+                            Esu
+                        </span>
+                        <span class="friend__status">
+                            hyer1205@gmail.com
+                        </span>
+                    </div>
+                </div>
+
+                <div class="friend__column">
+                    <i class="far fa-comment-alt fa-2x"></i>
+                </div>
+            </div>
+
+            <!-- Emoticons, Themes, Account -->
+            <ul class="more__btn-list">
+                <li class="more__btn">
+                    <span class="more__btn-icon">
+                        <i class="far fa-smile fa-2x"></i>
+                    </span>
+                    <span class="more__btn-title">
+                        Emoticons
+                    </span>
+                </li>
+                <li class="more__btn">
+                    <span class="more__btn-icon">
+                        <i class="fas fa-brush fa-2x"></i>
+                    </span>
+                    <span class="more__btn-title">
+                        Themes
+                    </span>
+                </li>
+                <li class="more__btn">
+                    <span class="more__btn-icon">
+                        <i class="fab fa-kickstarter fa-2x"></i>
+                    </span>
+                    <span class="more__btn-title">
+                        Account
+                    </span>
+                </li>
+            </ul>
+
+        </header>
+
+        <!-- Suggestions 다른 앱들 제안 -->
+        <section class="more__suggestions">
+
+            <h5 class="more__title">Suggestions</h5>
+
+            <!-- Another Apps -->
+            <ul class="more__suggestions-list">
+                <li class="more__suggestion suggestion">
+                    <span class="suggestion__icon">
+                        <i class="fas fa-quote-right fa-2x"></i>
+                    </span>
+                    <span class="suggestion__title">
+                        Kakao Story
+                    </span>
+                </li>
+                <li class="more__suggestion suggestion">
+                    <span class="suggestion__icon">
+                        <i class="fas fa-beer fa-2x"></i>
+                    </span>
+                    <span class="suggestion__title">
+                        Kakao friends
+                    </span>
+                </li>
+                <li class="more__suggestion suggestion">
+                    <span class="suggestion__icon">
+                        <i class="fas fa-gamepad fa-2x"></i>
+                    </span>
+                    <span class="suggestion__title">
+                        Friends Gem
+                    </span>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- 가장 하단에 네비게이션 바 -->
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav__list-item">
