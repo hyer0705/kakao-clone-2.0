@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!-- Status Bar 맨 위에 시간 배터리 알려주는 공간 -->
     <div class="status-bar">
         <div class="status-bar__column">
             <span class="status-bar__clock">13:54</span>
@@ -23,6 +24,9 @@
             <i class="fas fa-battery-full"></i>
         </div>
     </div>
+
+    <!-- Header 어떤 화면인지에 대한 표시와 
+        그 화면에서 할 수 있는 기능 (ex. search, setting) -->
     <header class="header">
         <div class="header__header-column">
             <h1 class="header__title">Find</h1>
@@ -37,6 +41,87 @@
             </span>
         </div>
     </header>
+
+    <!-- Main (여기가 메인이다 라는 뜻) QR Code, Add by Contacts, Add by ID,
+    Invite 등 친구를 초대하는 방법 -->
+    <main class="find">
+
+        <!-- how to find friends -->
+        <header class="find__header">
+            <ul class="find__header-list">
+                <!-- QR code -->
+                <li class="find__header-btn header-btn">
+                    <span class="header-btn__icon">
+                        <i class="fas fa-qrcode fa-2x"></i>
+                    </span>
+                    <span class="header-btn__title">
+                        QR Code
+                    </span>
+                </li>
+
+                <!-- By Contacts -->
+                <li class="find__header-btn header-btn">
+                    <span class="header-btn__icon">
+                        <i class="fas fa-user-plus fa-2x"></i>
+                    </span>
+                    <span class="header-btn__title">
+                        ADD by Contacts
+                    </span>
+                </li>
+
+                <!-- By ID -->
+                <li class="find__header-btn header-btn">
+                    <span class="header-btn__icon">
+                        <i class="fas fa-passport fa-2x"></i>
+                    </span>
+                    <span class="header-btn__title">
+                        ADD by ID
+                    </span>
+                </li>
+
+                <!-- Invite -->
+                <li class="find__header-btn header-btn">
+                    <span class="header-btn__icon">
+                        <i class="far fa-envelope fa-2x"></i>
+                    </span>
+                    <span class="header-btn__title">
+                        Invite
+                    </span>
+                </li>
+            </ul>
+        </header>
+
+        <!-- Recommended Friends List -->
+        <ul class="find__recommended">
+            <h5 class="find__title">
+                Recommended Friends
+            </h5>
+
+            <li class="find__friend friend">
+
+                <!-- Recommended Friends Profile -->
+                <div class="friend__column">
+                    <img src="images/avatar.jpg" class="g-avatar friend__avatar">
+                    <div class="friend__content">
+                        <span class="friend__name">
+                            Esu
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Plus Icon -->
+                <div class="friend__column">
+                    <div class="friend__add-btn">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+
+                </div>
+            </li>
+        </ul>
+
+    </main>
+
+    <!-- 가장 하단에 네비게이션 바 -->
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav__list-item">
