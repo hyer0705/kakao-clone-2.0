@@ -1,0 +1,5 @@
+/* reset.css 넣기
+    reset.css와 비슷한 것 -> normalize.css
+    normalize. css :같은 크기로 margin,padding 등 설정해줌
+*/
+@import "reset.css";
