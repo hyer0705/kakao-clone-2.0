@@ -9,6 +9,8 @@
 @import "nav-bar.css";
 
 *{
+    /* box-sizing : border-box => padding 값을 주어도 
+    box의 width, height 값을 그대로 유지시켜줘! */
     box-sizing: border-box;
 }
 
