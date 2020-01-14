@@ -2,7 +2,7 @@
     reset.css와 비슷한 것 -> normalize.css
     normalize. css :같은 크기로 margin,padding 등 설정해줌
 */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300:400,600&display=swap');
 @import "reset.css";
 @import "status-bar.css";
 @import "header.css";
@@ -11,6 +11,7 @@
 @import "friends.css";
 @import "find.css";
 @import "more.css";
+@import "settings.css";
 
 *{
     /* box-sizing : border-box => padding 값을 주어도 
